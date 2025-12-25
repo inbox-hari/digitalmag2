@@ -14,13 +14,13 @@ class NavigationControls extends StatelessWidget {
   final NavigationControlsStyle? style;
 
   const NavigationControls({
-    Key? key,
+    super.key,
     required this.appState,
     required this.pageNavigation,
     required this.pdfLoader,
     required this.pageController,
     this.style,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

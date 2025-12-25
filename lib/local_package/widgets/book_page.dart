@@ -7,11 +7,11 @@ class BookPage extends StatelessWidget {
   final double finalPageHeight;
 
   const BookPage({
-    Key? key,
+    super.key,
     required this.appState,
     required this.finalPageWidth,
     required this.finalPageHeight,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class BookPage extends StatelessWidget {
 
     return Visibility(
       visible: true,
-      child: Container(
+      child: SizedBox(
         height: finalPageHeight,
         width: finalPageWidth,
         child: Image.memory(image.bytes, fit: BoxFit.contain),

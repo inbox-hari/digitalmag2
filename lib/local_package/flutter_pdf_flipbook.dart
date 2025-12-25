@@ -1,4 +1,4 @@
-library flutter_pdf_flipbook;
+library;
 
 // Export the main widget
 export 'widgets/pdf_book_viewer.dart';

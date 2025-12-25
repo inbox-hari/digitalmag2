@@ -8,12 +8,12 @@ class AnimatedPage extends StatelessWidget {
   final double finalPageHeight;
 
   const AnimatedPage({
-    Key? key,
+    super.key,
     required this.appState,
     required this.rotationAnimation,
     required this.finalPageWidth,
     required this.finalPageHeight,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,7 @@ class AnimatedPage extends StatelessWidget {
             opacity: opacity,
             child: Align(
               alignment: Alignment.center,
-              child: Container(
+              child: SizedBox(
                 height: finalPageHeight,
                 width: finalPageWidth,
                 child: Image.memory(

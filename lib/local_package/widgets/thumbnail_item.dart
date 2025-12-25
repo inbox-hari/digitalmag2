@@ -8,12 +8,12 @@ class ThumbnailItem extends StatefulWidget {
   final bool isSelected;
 
   const ThumbnailItem({
-    Key? key,
+    super.key,
     required this.document,
     required this.pageIndex,
     required this.onTap,
     this.isSelected = false,
-  }) : super(key: key);
+  });
 
   @override
   State<ThumbnailItem> createState() => _ThumbnailItemState();

@@ -44,7 +44,7 @@ class PdfBookViewer extends StatefulWidget {
   final void Function(bool isFullScreen)? onFullScreenChanged;
 
   const PdfBookViewer({
-    Key? key,
+    super.key,
     required this.pdfUrl,
     this.style,
     this.onPageChanged,
@@ -53,7 +53,7 @@ class PdfBookViewer extends StatefulWidget {
     this.backgroundColor,
     this.proxyUrl,
     this.onFullScreenChanged,
-  }) : super(key: key);
+  });
 
   @override
   _PdfBookViewerState createState() => _PdfBookViewerState();

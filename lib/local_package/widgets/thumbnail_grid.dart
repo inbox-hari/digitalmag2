@@ -8,10 +8,10 @@ class ThumbnailGrid extends StatelessWidget {
   final PdfLoader pdfLoader;
 
   const ThumbnailGrid({
-    Key? key,
+    super.key,
     required this.appState,
     required this.pdfLoader,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
